@@ -27,6 +27,10 @@ public class Main extends Application {
         gridPaneLeft.getColumnConstraints().addAll(column1, column2, column3);
 
         Label labelLeft = new Label("Panel plików");
+        labelLeft.setTranslateY(-18);
+        labelLeft.setTranslateX(5);
+        labelLeft.setStyle("-fx-background-color: whitesmoke;");
+        labelLeft.setPadding(new Insets(5));
         gridPaneLeft.add(labelLeft, 0, 0);
         Label labelUpper = new Label("Źródło");
         gridPaneLeft.add(labelUpper, 0, 1);
@@ -54,6 +58,10 @@ public class Main extends Application {
         gridpaneRight.setPadding(new Insets(5));
 
         Label labelRight = new Label("Opcje uruchamienia");
+        labelRight.setTranslateY(-18);
+        labelRight.setTranslateX(5);
+        labelRight.setStyle("-fx-background-color: whitesmoke;");
+        labelRight.setPadding(new Insets(5));
         gridpaneRight.add(labelRight, 0, 0);
 
         Button btn1 = new Button();
